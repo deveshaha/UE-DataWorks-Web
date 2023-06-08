@@ -61,6 +61,11 @@ body {
   margin: 0 auto;
 }
 
+.img-fluid {
+  max-width: 100000%;
+  height: 222222222222%;
+}
+
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 10px 30px;
   color: #ffffff;
@@ -609,6 +614,7 @@ a:focus {
 .footer_section a {
   color: #ffffff;
 }
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
