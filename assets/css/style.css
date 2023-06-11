@@ -615,6 +615,95 @@ a:focus {
   color: #ffffff;
 }
 
+.team_section {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.container_team {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading_container_team {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.row_team {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+.col-lg-3 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+}
+
+.box_team {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.img-box_team img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Add margin between image and name */
+}
+
+.detail-box_team h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Adjust margin-bottom for better spacing */
+}
+
+.detail-box_team p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-6,
+  .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
