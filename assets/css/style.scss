@@ -76,7 +76,7 @@ body {
 /*header section*/
 .hero_area {
     height: 100vh;
-    background-image: url(../img/hero-bg.jpg);
+    background-image: url(assets/img/app-bg.jpg);
     background-size: cover;
 }
 
@@ -128,17 +128,6 @@ a:focus {
 }
 
 
-
-.custom_nav-container .nav_search-btn {
-    background-image: url(assets/img/search-icon.png);
-    background-size: 22px;
-    background-repeat: no-repeat;
-    background-position-y: 7px;
-    width: 35px;
-    height: 35px;
-    padding: 0;
-    border: none;
-}
 
 .navbar-brand {
     display: flex;
