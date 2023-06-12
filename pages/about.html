@@ -23,14 +23,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="/assets/css/responsive.css" rel="stylesheet" />
+  <link href="../assets/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -39,9 +39,9 @@
     <header class="header_section" style="background-color: #e93f1a; position: sticky; top: 0; z-index: 999;">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand mr-5" href="index.html">
+          <a class="navbar-brand mr-5" href="../index.html">
             <!--add logo and resize it with css -->
-            <img src="/assets/img/logo.png" alt="" class="img-fluid" style="width: 200px; height: auto;">
+            <img src="../assets/img/logo.png" alt="" class="img-fluid" style="width: 200px; height: auto;">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,16 +51,16 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="/pages/index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/about.html"> About </a>
+                  <a class="nav-link" href="../pages/about.html"> About </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="https://github.com/alexaib2002/project-dataworks_base" target="_blank"> Download </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/pages/contact.html">Contact us</a>
+                  <a class="nav-link" href="../pages/contact.html">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -80,7 +80,7 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Us
+                About DataWorks
               </h2>
             </div>
             <p>
@@ -89,19 +89,30 @@
               Say goodbye to scattered spreadsheets and disconnected databases, as DataWorks provides a centralized 
               platform to store, sort, and manage your valuable information.
             </p>
-            <a href="">
+  
+            <p>
+              We developed a powerful tool designed to meet your data organization needs. 
+              We understand the challenges users face when it comes to managing data efficiently and effectively. 
+              That's why we have developed a user-friendly and extensible interface based on cutting-edge web technologies.
+            </p>
+            <a href="../pages/contact.html">
               Get Started
             </a>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="img-box">
+                <img src="../assets/img/capture-login.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
   <!-- end about section -->
 
   <!-- info section -->
@@ -164,6 +175,57 @@
     </div>
   </section>
 
+  <!--Technical detalis section-->
+
+  <section class="technical_details_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="heading_container">
+            <h2>Technical Details</h2>
+          </div>
+          <div class="detail-box">
+            <p>
+              We have chosen Electron as the technology for our application. It provides a unified codebase for all platforms, utilizing JavaScript (or TypeScript) and standard web technologies such as HTML and CSS for creating user interfaces.
+            </p>
+  
+            <p>
+              Electron follows a multiprocess architecture, employing the MVC (Model-View-Controller) development pattern. It consists of two main processes:
+            </p>
+  
+            <ul>
+              <li>Main process: Based on the node.js framework, it serves as the backend of the application, handling tasks like file system operations and database queries.</li>
+              <li>Renderer process: Similar to a web page script, it enables dynamic features such as animations and real-time interactions with the user.</li>
+            </ul>
+  
+            <p>
+              Additionally, Electron facilitates easy export to desktop operating systems. While direct support for mobile platforms is not available, the Capacitor project allows for generating APK packages for Android and native packages for iOS, removing any limitations.
+            </p>
+  
+            <p>
+              For data storage, we initially recommend using the SQLite database due to its high portability and efficiency. Since we don't anticipate dealing with massive amounts of data or requiring concurrent access from external users, server-based databases like PostgreSQL or MongoDB are not necessary.
+            </p>
+  
+            <p>
+              The selected framework for the graphical user interface is next.js, built on React, a widely supported library known for its simplicity. Powered by Vercel, it enables rapid development of web-based graphical interfaces.
+            </p>
+  
+            <p>
+              To create the application, we rely on the open-source project nextron, which seamlessly embeds a next.js-based application within the Electron environment.
+            </p>
+            <h3>Screenshots:</h3>
+            <img src="../assets/img/capture-login.png" alt="Screenshot 2" class="screenshot">
+            <br>
+            <img src="../assets/img/capture-app.png" alt="Screenshot 1" class="screenshot">
+            <br>
+            <img src="../assets/img/capture-db.png" alt="Screenshot 3" class="screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
 
   <!-- end info section -->
 
@@ -175,8 +237,8 @@
   </section>
   <!-- footer section -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
 </body>
 

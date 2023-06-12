@@ -92,7 +92,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn {
-  background-image: url(/assets/img/search-icon.png);
+  background-image: url(assets/img/search-icon.png);
   background-size: 22px;
   background-repeat: no-repeat;
   background-position-y: 7px;
@@ -133,7 +133,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(/assets/img/menu.png);
+  background-image: url(../img/menu.png);
   background-size: 55px;
 }
 
@@ -269,19 +269,19 @@ a:focus {
 }
 
 .slider_section .custom_carousel-control .carousel-control-prev {
-  background-image: url(/assets/img/prev.png);
+  background-image: url(assets/img/prev.png);
 }
 
 .slider_section .custom_carousel-control .carousel-control-prev:hover {
-  background-image: url(/assets/img/prev-white.png);
+  background-image: url(assets/img/prev-white.png);
 }
 
 .slider_section .custom_carousel-control .carousel-control-next {
-  background-image: url(/assets/img/next.png);
+  background-image: url(assets/img/next.png);
 }
 
 .slider_section .custom_carousel-control .carousel-control-next:hover {
-  background-image: url(/assets/img/next-white.png);
+  background-image: url(assets/img/next-white.png);
 }
 
 /* end slider section */
@@ -308,7 +308,7 @@ a:focus {
 }
 
 .body_bg {
-  background-image: url(/assets/img/body_bg.jpg);
+  background-image: url(../img/body_bg.jpg);
   background-size: cover;
 }
 
@@ -701,9 +701,71 @@ h2 {
   }
 }
 
+.technical_details_section {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
 
+.technical_details_section .heading_container {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+.technical_details_section .heading_container h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 auto;
+}
 
+.technical_details_section .detail-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 
-/* end footer section*/
-/*# sourceMappingURL=style.css.map */
+.technical_details_section .detail-box p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+}
+
+.technical_details_section .detail-box ul {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+}
+
+.technical_details_section .detail-box ul li {
+  margin-bottom: 10px;
+}
+
+.screenshots {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.screenshots h3 {
+  margin-bottom: 20px;
+}
+
+.screenshots img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.screenshot {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .screenshot {
+    width: 100%;
+    height: auto;
+  }
+}
